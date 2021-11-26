@@ -10,7 +10,6 @@ const handleFormSubmit = function (event) {
     const album = this.album.value;
     const artist = this.artist.value;
     const release = this.release.value;
-    const colour = this.colour.value;
     
     const newListItem = document.createElement('li');
 
@@ -26,14 +25,13 @@ const handleFormSubmit = function (event) {
     innerRelease.classList.add('show-release');
     innerRelease.textContent = release;
 
-    const innerColour = document.createElement('div');
-    innerColour.classList.add('show-colour');
-    innerColour.textContent = colour;
 
     newListItem.appendChild(innerAlbum)
     newListItem.appendChild(innerArtist)
     newListItem.appendChild(innerRelease)
-    newListItem.appendChild(innerColour)
+    
+    newListItem.classList.add('list-item');
+    newListItem.classList.add('flex');
 
     const list = document.querySelector('#record-list');
     list.appendChild(newListItem)

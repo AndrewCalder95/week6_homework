@@ -3,3 +3,30 @@ body {
     background-image: url(/img/background_img.png);
     background-size: cover;
 }
+
+.flex {
+    display: flex;
+  }
+#record-list {
+    list-style: none;
+    justify-content: space-evenly;
+    height: 400px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 100px;
+    margin: 5px;
+    border-radius: 50%;
+    justify-content: space-around;
+    overflow-wrap: break-word;
+    height: 140px;
+    width: 140px;
+  }
