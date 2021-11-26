@@ -1,6 +1,7 @@
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: blanchedalmond;
+    font-family: 'Staatliches', cursive;
+    background: url(/img/background_img.png) no-repeat center fixed;
+    background-color: #c7be9f;
     background-size: cover;
 }
 
@@ -23,7 +24,7 @@ body {
     border-style: solid;
     border-color: black;
     border-width: 100px;
-    margin: 5px;
+    margin: 50px;
     border-radius: 50%;
     justify-content: space-around;
     overflow-wrap: break-word;
@@ -38,16 +39,56 @@ body {
     transform: rotate(360deg); 
 }
 
-#new-record-form{
-    justify-content: space-evenly;
+.list-item2 {
     padding: 10px;
-    margin: 10px
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(red, yellow);    
+    border-style: solid;
+    border-color: black;
+    border-width: 100px;
+    margin: 50px;
+    border-radius: 50%;
+    justify-content: space-around;
+    overflow-wrap: break-word;
+    height: 140px;
+    width: 140px;
+    transition: transform 10s ease-in-out;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 80%;
+  }
+
+.list-item2:hover {
+    transform: rotate(360deg); 
 }
 
-.form-item{
-    padding: 5px;
+#form-wrapper{
+    justify-content: space-evenly;
+    padding-right: 10px;
 }
 
 #page-title {
+    padding: 10px;
+    margin: 5px;
     text-align: center;
+    font-size: 100px;
+    font-family: 'Staatliches', cursive;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 10px;
+    font-family: 'Staatliches', cursive;
+}
+
+.button2 {
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: 10px;
+    font-family: 'Staatliches', cursive;
 }

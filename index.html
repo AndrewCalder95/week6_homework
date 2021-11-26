@@ -6,11 +6,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">
     <script src='js/app.js'></script>
   </head>
   <body>
-    <form id="new-record-form" class='flex'>
+    <h1 id="page-title">Record Collection</h1>
+    <form id="new-record-form">
       <div id="form-wrapper" class="flex">
         <div class="form-item flex">
           <label for="album" class="primary">Album Title:  </label>
@@ -26,14 +27,18 @@
           <label for="release" class="primary">Release year:  </label>
           <input type="number" id="release" value = "1950" required/>
         </div>
-
-      </div>
-      <input type="submit" class="button" value="Add"/>
+        <div>
+            <input type="radio" id="favourite" value ="yes">
+            <label for="favourite">Favourite</label><br>
+            <input type="hidden" id = "favourite" value = "no">
+        </div>
+      <input type="submit" class="button flex" value="Add"/>
     </form>
-    <button id="delete-button">Delete All</button>
+
+    <button id="delete-button" class="button2 flex">Delete All</button>
+    </div>
 
 
-    <h1 id="page-title">Record Collection</h1>
     <ul id="record-list" class="flex">
        
     </ul>

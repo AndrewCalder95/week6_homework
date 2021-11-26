@@ -12,6 +12,7 @@ const handleFormSubmit = function (event) {
     const album = this.album.value;
     const artist = this.artist.value;
     const release = this.release.value;
+    const favourite = this.favourite.value;
     
     const newListItem = document.createElement('li');
 
@@ -31,9 +32,15 @@ const handleFormSubmit = function (event) {
     newListItem.appendChild(innerAlbum)
     newListItem.appendChild(innerArtist)
     newListItem.appendChild(innerRelease)
-    
-    newListItem.classList.add('list-item');
-    newListItem.classList.add('flex');
+
+    if (favourite === "yes") {
+        newListItem.classList.add('list-item2');
+        newListItem.classList.add('flex');
+    } else {
+        newListItem.classList.add('list-item');
+        newListItem.classList.add('flex');
+    }
+
 
     const list = document.querySelector('#record-list');
     list.appendChild(newListItem)
