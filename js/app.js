@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
     document.querySelector('#new-record-form').addEventListener('submit', handleFormSubmit);
     document.querySelector('#delete-button').addEventListener('click', handleDelete);
+    vdocument.querySelector("#audioID").addEventListener('onmouseover', handleHover);
+
   })
   
 const handleFormSubmit = function (event) {
@@ -44,3 +46,11 @@ const handleDelete = function () {
     const resultParagraph = document.querySelector('#record-list');
     resultParagraph.textContent = '';
 };
+
+
+const handleHover = function () {
+    const audio1 = document.querySelector('#record-list');
+    function playAudio() {
+        audio1.play();   
+    }
+}

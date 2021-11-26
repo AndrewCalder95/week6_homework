@@ -1,6 +1,6 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(/img/background_img.png);
+    background-color: blanchedalmond;
     background-size: cover;
 }
 
@@ -29,4 +29,25 @@ body {
     overflow-wrap: break-word;
     height: 140px;
     width: 140px;
+    transition: transform 10s ease-in-out;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 80%;
   }
+
+.list-item:hover {
+    transform: rotate(360deg); 
+}
+
+#new-record-form{
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px
+}
+
+.form-item{
+    padding: 5px;
+}
+
+#page-title {
+    text-align: center;
+}
